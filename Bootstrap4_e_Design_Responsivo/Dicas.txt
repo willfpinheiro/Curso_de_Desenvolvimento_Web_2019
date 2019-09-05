@@ -1,0 +1,6 @@
+Fluido (liquido)
+é definido em porcentagem, quanto menor a tela menor o tamanho do item
+
+Diferente do Responsivo
+Que controla o que é exibido pro usuario, e continua com tamanhos visiveis.
+Utilizando o melhor espaço em tamanhos de telas diferentes.
