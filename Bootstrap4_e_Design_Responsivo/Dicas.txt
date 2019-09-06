@@ -1,6 +1,13 @@
 Fluido (liquido)
-é definido em porcentagem, quanto menor a tela menor o tamanho do item
+é definido em porcentagem, quanto menor a tela menor o tamanho do item,
+expandindo.
 
 Diferente do Responsivo
 Que controla o que é exibido pro usuario, e continua com tamanhos visiveis.
-Utilizando o melhor espaço em tamanhos de telas diferentes.
+Utilizando o melhor espaço da tela, em tamanhos de telas diferentes.
+
+Layout adaptivo ja é um pouco diferente, pois cria um site diferente para,
+cada tamanho de tela.
+
+Links uteis:
+https://mediaqueri.es
