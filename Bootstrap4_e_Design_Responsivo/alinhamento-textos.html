@@ -24,36 +24,44 @@
     <br>
     <br>
 
-    <!-- Alinhamento responsivo - text-<tela>-<alinhamento> tela: sm, md, lg, xl alinhamento: left, center, right -->
-    <p>tela &gt;= 576px</p>
+
+    <!-- Alinhamento responsivo - 
+        class text-<tela>-<alinhamento> tela: sm, md, lg, xl alinhamento: left, center, right -->
+    <p class="text-sm-right">tela >= 576px</p>
     <!--Small-->
-    <p>tela &gt;= 768px</p>
+    <p class="text-md-right">tela &gt;= 768px</p>
     <!--Medium-->
-    <p>tela &gt;= 992px</p>
+    <p class="text-lg-right">tela &gt;= 992px</p>
     <!--Large-->
-    <p>tela &gt;= 1200px</p>
+    <p class="text-xl-right">tela &gt;= 1200px</p>
     <!--Extra Large-->
 
     <br>
     <br>
 
-    <!-- Elemento Block para inline -->
-    <h1>Lorem ipsum dolor</h1>
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+    <!-- Conerter Elementos de bloco para inline -->
+    <!-- coloca um fundo de cor, preenchendo o espaço total -->
+    <h1 class="bg-success d-inline">Lorem ipsum dolor</h1>
+    <p class="bg-danger d-inline">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
 
     <br>
     <br>
 
-    <!-- Elemento Inline para Block -->
-    <span>Lorem ipsum dolor</span>
-    <span>Lorem ipsum dolor 2</span>
+    <!-- Converter Elemento Inline para Block -->
+    <span class="bg-success d-block">Lorem ipsum dolor</span>
+    <br>
+    <span class="bg-danger d-block">Lorem ipsum dolor 2</span>
 
     <br>
     <br>
 
-    <!-- Elemento Inline para Block -->
-    <h3>Lorem ipsum</h3>
-    <h3>Lorem ipsum dolor</h3>
+    <!-- Elemento Inline-Block -->
+    <!-- Elementos block pode se colocar margin-->
+    <div class="bg-warning">
+        <h3 class="bg-success d-inline-block">Lorem ipsum</h3>
+        <h3 class="bg-success d-inline-block" style="margin-top: 50px;width: 400px">Lorem ipsum dolor</h3>    
+    </div>
+    
 
 
     <!-- JavaScript (Opcional) -->
