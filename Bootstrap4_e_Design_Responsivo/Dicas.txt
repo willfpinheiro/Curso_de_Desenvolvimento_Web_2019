@@ -1,4 +1,4 @@
-Fluido (liquido)
+﻿Fluido (liquido)
 é definido em porcentagem, quanto menor a tela menor o tamanho do item,
 expandindo.
 
@@ -11,3 +11,4 @@ cada tamanho de tela.
 
 Links uteis:
 https://mediaqueri.es
+https://getbootstrap.com.br/
