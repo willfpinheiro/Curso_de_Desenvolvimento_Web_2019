@@ -14,49 +14,96 @@
     <style type="text/css">
         
         /*Small devices (landscape phones)*/
-        @media () {}
+        /*(condição - tamanho da tela) {formatação = o que vai ser aplicado}*/
+        /*Mostrando do minimo em diante*/
+        @media (min-width: 576px) {
+            /*body {
+                background: red;
+            }*/
+            #tem{
+                display: none;
+            }
+        }
 
         /*Medium devices (tablets, 768px e superior)*/
-        @media () {}
+        @media (min-width: 768px) {
+            /*body {
+                background: blue;
+            }*/
+        }
 
         /*Large devices (desktops, 992px e superior)*/
-        @media () {}
+        @media (min-width: 992px) {
+            /*body {
+                background: yellow;
+            }*/
+        }
 
         /*Extra large devices (large desktops, 1200px e superior)*/
-        @media () {}
+        @media (min-width: 1200px) {
+            /*body {
+                background: gray;
+            }*/
+        }
 
 
 
         /**************************/
         /* Extra small devices (portraint phones) */
-        @media () {}
+        @media (max-width: 575.98px) {
+            /*body {
+                background: #870000;
+            }*/
+        }
 
         /* Small devices (Landscape Phones) */
-        @media () {}
+        @media (max-width: 767px) {}
 
         /* Medium devices (Tablets) */
-        @media () {}
+        @media (max-width: 991px) {}
 
         /* Large devices (Desktops) */
-        @media () {}
+        @@media (max-width: 1199px) {}
 
 
 
-        /******************************************/
-        /*Extra small devices (portrait phones, menor que 576px)*/
-        @media () {}
+        /*// Dispositivos extra small (telefones em modo retrato, com menos de 576px)*/
+        @media (max-width: 575.98px) { 
+            body {
+                background: url("https://pbs.twimg.com/media/CltmK7dXIAA6FCO.jpg") no-repeat fixed center;
+            } 
+            #naotem{
+                display: none;
+            }
+        }
 
-        /*Small devices (landscape phones, 576px e maiores)*/
-        @media () and () {}
+        /*// Dispositivos small (telefones em modo paisagem, com 576px ou mais)*/
+        @media (min-width: 576px) and (max-width: 767.98px) { 
+            body {
+                background: red;
+            } 
+        }
 
-        /*Medium devices (tablets, 768px e maiores)*/
-        @media () and () {}
+        /*// Dispositivos médios (tablets com 768px ou mais)*/
+        @media (min-width: 768px) and (max-width: 991.98px) { 
+            body {
+                background: blue;
+            }
+        }
 
-        /*Large devices (desktops, 992px e maiores)*/
-        @media () and () {}
+        /*// Dispositivos large (desktops com 992px ou mais)*/
+        @media (min-width: 992px) and (max-width: 1199.98px) {  
+            body {
+                background: yellow;
+            }
+        }
 
-        /*Extra large devices (large desktops, 1200px  e maiores)*/
-        @media () {}
+        /*// Dispositivos extra large (desktops grandes com 1200px ou mais)*/
+        @media (min-width: 1200px) { 
+            body {
+                background: gray;
+            }
+        }
 
     </style>
 
@@ -65,7 +112,8 @@
   <body style="margin-bottom: 200px; width: 600px; margin: 0 auto;">
 
 
-    <a class="btn btn-danger fixed-botton float-auto" href="./index.html" role="button">Não tem nada aqui...</a>
+    <a id="naotem" class="btn btn-danger fixed-botton float-auto" href="./index.html#breakpoints" role="button">Não tem nada aqui...</a>
+    <a id="tem" class="btn btn-danger float-auto" href="./index.html#breakpoints" role="button">Tem sim!!!</a>
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
