@@ -1,0 +1,183 @@
+<!doctype html>
+<html lang="pt-br">
+
+<head>
+
+  <title>Bootstrap - Classes flexbox</title>
+
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="./bootstrap-4/css/bootstrap.min.css">
+
+  <!-- Iconic CSS -->
+  <link href="./iconic/font/css/open-iconic-bootstrap.css" rel="stylesheet">
+
+  <style type="text/css">
+    .caixa {
+      background: #f5f5f5;
+      height: 200px;
+    }
+
+    .item {
+      border: 1px solid black;
+      padding: 5px;
+    }
+  </style>
+
+</head>
+
+<body>
+  <div class="border-bottom border-dark py-3">
+    <h1 class="display-1">Classes FlexBox</h1>
+    <p class="text-monospace">Aulas referente ao curso de desenvolvimento web 2019, assunto tratado: Icones, utilizando
+      as classes de FlexBox.
+    </p>
+    <ol class="breadcrumb float-right">
+      <li class="breadcrumb-item">
+        <a href="../home.html">Home</a>
+      </li>
+      <li class="breadcrumb-item">
+        <a href="./index.html">Bootstrap</a>
+      </li>
+      <li class="breadcrumb-item active">FlexBox</li>
+    </ol class="breadcrumb">
+  </div>
+  <br><br>
+
+  <div class="container">
+
+    <h2>Flex container e flex itens (d-flex, flex-row, flex-column, flex-row-reverse, flex-colum-reverse)</h2>
+    <div class="caixa d-flex flex-column">
+      <div class="item">Flex item 1</div>
+      <div class="item">Flex item 2</div>
+      <div class="item">Flex item 3</div>
+    </div>
+    <hr>
+    <div class="caixa d-flex flex-column-reverse">
+      <div class="item">Flex item 1</div>
+      <div class="item">Flex item 2</div>
+      <div class="item">Flex item 3</div>
+    </div>
+    <hr>
+    <div class="caixa d-flex flex-row">
+      <div class="item">Flex item 1</div>
+      <div class="item">Flex item 2</div>
+      <div class="item">Flex item 3</div>
+    </div>
+    <hr>
+    <div class="caixa d-flex flex-row-reverse">
+      <div class="item">Flex item 1</div>
+      <div class="item">Flex item 2</div>
+      <div class="item">Flex item 3</div>
+    </div>
+    <br><br>
+
+    <h2>Alinhamento horizontal: justify-content-ALINHAMENTO (start, center, end, around e between)</h2>
+    <div class="caixa d-flex justify-content-end">
+      <div class="item">Flex item 1</div>
+      <div class="item">Flex item 2</div>
+      <div class="item">Flex item 3</div>
+    </div>
+    <hr>
+    <div class="caixa d-flex justify-content-center">
+      <div class="item">Flex item 1</div>
+      <div class="item">Flex item 2</div>
+      <div class="item">Flex item 3</div>
+    </div>
+    <hr>
+    <div class="caixa d-flex justify-content-around">
+      <div class="item">Flex item 1</div>
+      <div class="item">Flex item 2</div>
+      <div class="item">Flex item 3</div>
+    </div>
+    <hr>
+    <div class="caixa d-flex justify-content-between">
+      <div class="item">Flex item 1</div>
+      <div class="item">Flex item 2</div>
+      <div class="item">Flex item 3</div>
+    </div>
+    <hr>
+    <div class="caixa d-flex justify-content-start">
+      <div class="item">Flex item 1</div>
+      <div class="item">Flex item 2</div>
+      <div class="item">Flex item 3</div>
+    </div>
+    <br><br>
+
+    <h2>Colunas (d-flex, flex-column, flex-column-reverse)</h2>
+    <div class="caixa d-flex flex-column-reverse">
+      <div class="item">Flex item 1</div>
+      <div class="item">Flex item 2</div>
+      <div class="item">Flex item 3</div>
+    </div>
+    <hr>
+    <div class="caixa d-flex flex-column">
+      <div class="item">Flex item 1</div>
+      <div class="item">Flex item 2</div>
+      <div class="item">Flex item 3</div>
+    </div>
+    <br><br>
+
+    <h2>Alinhamento vertical: align-items-ALINHAMENTO (start, center, end, baseline e stretch)</h2>
+    <div class="caixa d-flex align-items-end">
+      <div class="item">Flex item 1</div>
+      <div class="item">Flex item 2</div>
+      <div class="item">Flex item 3</div>
+    </div>
+    <hr>
+    <div class="caixa d-flex align-items-center">
+      <div class="item">Flex item 1</div>
+      <div class="item">Flex item 2</div>
+      <div class="item">Flex item 3</div>
+    </div>
+    <hr>
+    <div class="caixa d-flex align-items-start">
+      <div class="item">Flex item 1</div>
+      <div class="item">Flex item 2</div>
+      <div class="item">Flex item 3</div>
+    </div>
+    <hr>
+    <!-- Baseline alinha os intens pelo centro das linhas, ja o center ajusta pelo centro da caixas -->
+    <div class="caixa d-flex align-items-baseline">
+      <div class="item">Flex item 1</div>
+      <div class="item">Flex item 2</div>
+      <div class="item">Flex item 3</div>
+    </div>
+    <hr>
+    <div class="caixa d-flex align-items-stretch">
+      <div class="item">Flex item 1</div>
+      <div class="item">Flex item 2</div>
+      <div class="item">Flex item 3</div>
+    </div>
+    <br><br>
+
+    <h2>Alinhamento self: align-self-ALINHAMENTO (start, center, end, baseline e stretch)</h2>
+    <div class="caixa d-flex">
+      <div class="item align-self-start">Flex item 1</div>
+      <div class="item align-self-center">Flex item 2</div>
+      <div class="item align-self-end">Flex item 3</div>
+      <div class="item align-self-baseline">Flex item 4</div>
+      <div class="item align-self-strecth">Flex item 5</div>
+    </div>
+    <br><br>
+
+  </div>
+  <a class="btn btn-danger fixed-botton float-right text-white" href="./index.html#flexbox" role="button">
+    <i class="oi oi-home text-success"></i>
+    Voltar
+  </a>
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+    integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+    crossorigin="anonymous"></script>
+  <script src="./bootstrap-4/js/bootstrap.min.js"></script>
+</body>
+
+</html>

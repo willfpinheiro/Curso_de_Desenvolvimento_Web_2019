@@ -1,0 +1,20 @@
+/*
+* 
+* @author Jamilton Damasceno
+*/
+.divider{
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    -webkit-box-direction: normal;
+    font-family: Circular, spotify-circular, Helvetica, Arial, sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.5;
+    list-style: none;
+    box-sizing: border-box;
+    color: rgb(8, 3, 3);
+    display: inline-block;
+    height: 16px;
+    width: 1px;
+    background: currentColor;
+    margin: auto 17px;
+}

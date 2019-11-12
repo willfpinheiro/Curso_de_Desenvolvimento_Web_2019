@@ -1,0 +1,146 @@
+<!doctype html>
+<html lang="pt-br">
+
+<head>
+
+    <title>Bootstrap - breakpoints</title>
+
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="./bootstrap-4/css/bootstrap.min.css">
+
+    <style type="text/css">
+        /*Small devices (landscape phones)*/
+        /*(condição - tamanho da tela) {formatação = o que vai ser aplicado}*/
+        /*Mostrando do minimo em diante*/
+        @media (min-width: 576px) {
+
+            /*body {
+                background: red;
+            }*/
+            #tem {
+                display: none;
+            }
+        }
+
+        /*Medium devices (tablets, 768px e superior)*/
+        @media (min-width: 768px) {
+            /*body {
+                background: blue;
+            }*/
+        }
+
+        /*Large devices (desktops, 992px e superior)*/
+        @media (min-width: 992px) {
+            /*body {
+                background: yellow;
+            }*/
+        }
+
+        /*Extra large devices (large desktops, 1200px e superior)*/
+        @media (min-width: 1200px) {
+            /*body {
+                background: gray;
+            }*/
+        }
+
+
+
+        /**************************/
+        /* Extra small devices (portraint phones) */
+        @media (max-width: 575.98px) {
+            /*body {
+                background: #870000;
+            }*/
+        }
+
+        /* Small devices (Landscape Phones) */
+        @media (max-width: 767px) {}
+
+        /* Medium devices (Tablets) */
+        @media (max-width: 991px) {}
+
+        /* Large devices (Desktops) */
+        @media (max-width: 1199px) {}
+
+
+
+        /*// Dispositivos extra small (telefones em modo retrato, com menos de 576px)*/
+        @media (max-width: 575.98px) {
+            body {
+                background: url("https://pbs.twimg.com/media/CltmK7dXIAA6FCO.jpg") no-repeat fixed center;
+            }
+
+            #naotem {
+                display: none;
+            }
+        }
+
+        /*// Dispositivos small (telefones em modo paisagem, com 576px ou mais)*/
+        @media (min-width: 576px) and (max-width: 767.98px) {
+            body {
+                background: red;
+            }
+        }
+
+        /*// Dispositivos médios (tablets com 768px ou mais)*/
+        @media (min-width: 768px) and (max-width: 991.98px) {
+            body {
+                background: blue;
+            }
+        }
+
+        /*// Dispositivos large (desktops com 992px ou mais)*/
+        @media (min-width: 992px) and (max-width: 1199.98px) {
+            body {
+                background: yellow;
+            }
+        }
+
+        /*// Dispositivos extra large (desktops grandes com 1200px ou mais)*/
+        @media (min-width: 1200px) {
+            body {
+                background: gray;
+            }
+        }
+    </style>
+
+
+</head>
+
+<body style="margin-bottom: 200px; width: 600px; margin: 0 auto;">
+    <div class="border-bottom border-dark py-3">
+        <h1 class="display-1">Breakpoints</h1>
+        <p class="text-monospace">Aulas referente ao curso de desenvolvimento web 2019, assunto tratado: Breakpoints</p>
+        <ol class="breadcrumb float-right">
+            <li class="breadcrumb-item">
+                <a href="../home.html">Home</a>
+            </li>
+            <li class="breadcrumb-item">
+                <a href="./index.html">Bootstrap</a>
+            </li>
+            <li class="breadcrumb-item active">Breakpoints</li>
+        </ol class="breadcrumb">
+    </div>
+    <br><br>
+
+
+
+    <a id="naotem" class="btn btn-danger fixed-botton float-auto" href="./index.html#breakpoints" role="button">Não tem
+        nada aqui...</a>
+    <a id="tem" class="btn btn-danger float-auto" href="./index.html#breakpoints" role="button">Tem sim!!!</a>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+        integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+    <script src="./bootstrap-4/js/bootstrap.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <!-- Meta tags Obrigatórias -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="./bootstrap-4/css/bootstrap.min.css">
+
+    <title>Bootstrap - Alinhamento</title>
+    <div class="border-bottom border-dark py-3">
+        <h1 class="display-1">Alinhamento</h1>
+        <p class="text-monospace">Aulas referente ao curso de desenvolvimento web 2019, assunto tratado: Alinhamento de
+            texto</p>
+        <ol class="breadcrumb float-right">
+            <li class="breadcrumb-item">
+                <a href="../home.html">Home</a>
+            </li>
+            <li class="breadcrumb-item">
+                <a href="./index.html">Bootstrap</a>
+            </li>
+            <li class="breadcrumb-item active">Alinhamento</li>
+        </ol class="breadcrumb">
+    </div>
+    <br><br>
+</head>
+
+<body style="margin-bottom: 200px;padding: 16px;">
+
+    <!-- Parágrafo justificado -->
+    <p class="text-justify">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus vestibulum elementum
+        quam, a viverra ligula fringilla tempus. Ut tempor, dui eu semper aliquet, sem nisi pellentesque libero,
+        suscipit porttitor risus magna vel lorem.
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus vestibulum elementum quam, a viverra ligula
+        fringilla tempus. Ut tempor, dui eu semper aliquet, sem nisi pellentesque libero, suscipit porttitor risus magna
+        vel lorem.</p>
+    <br>
+    <br>
+
+
+    <!-- Alinhamento responsivo - 
+        class text-<tela>-<alinhamento> tela: sm, md, lg, xl alinhamento: left, center, right -->
+    <p class="text-sm-right">tela >= 576px</p>
+    <!--Small-->
+    <p class="text-md-right">tela &gt;= 768px</p>
+    <!--Medium-->
+    <p class="text-lg-right">tela &gt;= 992px</p>
+    <!--Large-->
+    <p class="text-xl-right">tela &gt;= 1200px</p>
+    <!--Extra Large-->
+
+    <br>
+    <br>
+
+    <!-- Conerter Elementos de bloco para inline -->
+    <!-- coloca um fundo de cor, preenchendo o espaço total -->
+    <h1 class="bg-success d-inline">Lorem ipsum dolor</h1>
+    <p class="bg-danger d-inline">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+
+    <br>
+    <br>
+
+    <!-- Converter Elemento Inline para Block -->
+    <span class="bg-success d-block">Lorem ipsum dolor</span>
+    <br>
+    <span class="bg-danger d-block">Lorem ipsum dolor 2</span>
+
+    <br>
+    <br>
+
+    <!-- Elemento Inline-Block -->
+    <!-- Elementos block pode se colocar margin-->
+    <div class="bg-warning">
+        <h3 class="bg-success d-inline-block">Lorem ipsum</h3>
+        <h3 class="bg-success d-inline-block" style="margin-top: 50px;width: 400px">Lorem ipsum dolor</h3>
+    </div>
+
+
+    <a class="btn btn-danger fixed-botton float-right" href="./index.html" role="button">De volta para o futuro</a>
+    <!-- JavaScript (Opcional) -->
+    <!-- jQuery primeiro, depois Popper.js, depois Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+        integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+        integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
