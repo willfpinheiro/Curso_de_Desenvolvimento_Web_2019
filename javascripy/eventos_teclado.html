@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+		<title>JavaScript - Eventos Mouse</title>
+
+		<script>
+			"use strict";
+			function acao1() {
+				alert("OnkeyDown");
+			}
+			function acao2() {
+				alert("OnkeyPress");
+			}
+			function acao3() {
+				alert("OnkeyUp");
+			}
+		</script>
+	</head>
+
+	<body>
+		<input
+			onkeydown="acao1()"
+			onkeypress="acao2()"
+			onkeyup="acao3()"
+			type="text"
+		/>
+		<!-- onkeypress so funciona para teclas com caracter
+            onkeyup exibe caracteres antes de executar oi evento -->
+	</body>
+</html>

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pt">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+		<title>JavaScript - Array Ordenação</title>
+		<script>
+			"use strict";
+
+			var listaFrutas = ["Maça", "Uva", "Banana", "Morango"];
+			var ListaNumeros = [12, 40, 3, 1, 98, 5];
+			// sorte faz uma ordenação alfanumerica na lista
+			console.log(listaFrutas.sort());
+
+			console.log(ListaNumeros.sort(ordenaNumeros));
+			function ordenaNumeros(a, b) {
+				return b - a;
+				// return a - b;
+			}
+		</script>
+	</head>
+
+	<body></body>
+</html>

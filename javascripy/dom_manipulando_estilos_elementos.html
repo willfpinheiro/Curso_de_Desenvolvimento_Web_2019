@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+		<title>JavaScript - Dom - Estilos Elementos</title>
+
+		<script>
+			"use strict";
+			function modificaEstilo(corDeFundo, l, a) {
+				document.getElementById(
+					"quadrado"
+				).style.background = corDeFundo; //backgroundImage - caso precise colocar uma imagem ou outra coisa
+
+				document.getElementById("quadrado").style.width = l;
+
+				document.getElementById("quadrado").style.height = a;
+			}
+		</script>
+	</head>
+
+	<body>
+		<h3>Manipulando Estilos</h3>
+		<input
+			type="button"
+			onclick="location.href='https://www.w3schools.com/jsref/prop_style_backgroundcolor.asp';"
+			value="Go to w3schools"
+		/>
+		<button type="button" onclick="modificaEstilo('#ff0000', '200px')">
+			Vermelho
+		</button>
+		<button
+			type="button"
+			onclick="modificaEstilo('#00ff00', '150px', '20px')"
+		>
+			Verde
+		</button>
+		<button
+			type="button"
+			onclick="modificaEstilo('#0000ff', '150px', '200px')"
+		>
+			Azul
+		</button>
+
+		<hr />
+		<div
+			style="border: solid 1px #000; width: 100px; height: 100px"
+			id="quadrado"
+		></div>
+	</body>
+</html>

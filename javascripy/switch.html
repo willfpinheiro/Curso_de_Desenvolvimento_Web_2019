@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+		<title>JavaScript - Switch</title>
+		<script>
+			"use strict";
+			// var parametro = 1
+			var parametro = prompt("digite");
+
+			switch (parseInt(parametro)) {
+				case 1:
+					// se parametro === 1
+					document.write("Parametro 1");
+					break;
+
+				case 2:
+					// se parametro === 2
+					document.write("Parametro 2 e" + "<br />");
+				// se for retirado o case sera usado todos abaixos
+
+				case 3:
+					// se parametro === 2
+					document.write("Parametro 3");
+					break;
+
+				default:
+					// se nao encontrado e opcional
+					document.write("Default");
+					break;
+			}
+		</script>
+	</head>
+
+	<body></body>
+</html>

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+		<title>JavaScript - Escopo de Variaveis</title>
+		<script>
+			"use strict";
+			//   3 escopos:
+			// Global - script completo
+			// Funçao - dentro de uma função
+			// Bloco - dentro de comandos(switch)
+			var serie = "Friends";
+
+			//escopo de bloco
+			if (true) {
+				var serie2 = "Game of Thrones";
+				document.write(serie);
+			}
+
+			document.write(serie2);
+
+			document.write("<br />");
+
+			function x() {
+				var serie3 = "The Walking Dead";
+				var serie2 = "Teste para saber so funçao muda variavel";
+				serie = "vai mudar?";
+				// função so muda variavel se ela nao for declarada dentro da função, como foi feito com a serie.
+				// Caso seja declarada, ela obtera o valor somente dentro da função
+				document.write(serie);
+				document.write(serie2);
+			}
+
+			x();
+
+			document.write("<br />");
+			document.write(serie);
+			document.write(serie2);
+			document.write(serie3);
+		</script>
+	</head>
+
+	<body></body>
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+		<title>JavaScript - Pratica - 2</title>
+		<script>
+			"use strict";
+
+			for (let y = 0; y <= 10; y++) {
+				document.write(
+					"Soma |  |  Subtração   |  |  Multiplicação   |  |  Divisão <br />"
+				);
+				for (let x = 0; x <= 10; x++) {
+					document.write(
+						y + " + " + x + " = " + (y + x) + "  |  |  "
+					);
+					document.write(
+						y + " - " + x + " = " + (y - x) + "  |  |  "
+					);
+					document.write(y + " * " + x + " = " + y * x + "  |  |  ");
+					document.write(
+						y +
+							" / " +
+							x +
+							" = " +
+							(y / x).toFixed(2) +
+							"    <br />"
+					);
+				}
+				document.write("<br /> <hr /> <br />");
+			}
+		</script>
+	</head>
+
+	<body></body>
+</html>

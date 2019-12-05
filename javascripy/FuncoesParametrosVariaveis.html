@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+		<title>JavaScript - Funções Paramêtros Variáveis</title>
+		<script>
+			"use strict";
+			// void - processa mas nao retorna
+			// retorno - retorna algo
+
+			// function calcularAreaTerreno(largura, comprimento) {
+			// 	//logica
+			// 	var area = largura * comprimento;
+			// 	// document.write("O terreno possui " + area + " metros quadrados");
+			// 	return area;
+			// }
+			// var largura = prompt("Digite a largura do terreno em metros");
+			// var comprimento = prompt(
+			// 	"Digite o comprimento do terreno em metros"
+			// );
+
+			// var area = calcularAreaTerreno(largura, comprimento);
+			// document.write("O terreno possui " + area + " metros quadrados");
+
+			// function soma(a, b) {
+			// 	// b = b === undefined ? 0 : b - resolve caso o b venha vazio
+			// 	return a + b;
+			// }
+
+			// console.log(soma(7, 7));
+			// console.log(soma()); // retorna um not a number
+			// console.log(soma(7)); // retornara um not a number pois soma  7 + undefined
+			// console.log(soma(7, 7, 9, 10)); //desconsidera os parametros adicionais
+
+			function soma() {
+				var resultado = 0;
+				for (var i in arguments) {
+					resultado += arguments[i];
+				}
+				return resultado;
+			}
+			console.log(soma(7, 5, 3.2, 0.8, "Texto"));
+		</script>
+	</head>
+
+	<body></body>
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+		<title>JavaScript - ForEach</title>
+		<script>
+			"use strict";
+			// Lembrando que forEach so funciona com arrays numericos
+			var listaFuncionarios = [
+				"Jorge",
+				"Jamilton",
+				"José",
+				"Ana",
+				"Maria"
+			];
+			// quando enviamos um função de callback ára outra função essa função executa
+			//  as informações dentro da outra função
+			// listaFuncionarios.forEach(function(valor, indice, array){
+			console.log(listaFuncionarios);
+			listaFuncionarios.forEach(function(valor, indice, array) {
+				// lógica
+				console.log("indice: " + indice + "| valor: " + valor);
+				if (valor == "Ana") {
+					array[indice] = "Um Novo Valor";
+				}
+				console.log(array);
+			});
+
+			// pode ser feito tambem
+			var f = function(valor, indice, array) {
+				document.write(valor, indice);
+			};
+			listaFuncionarios.forEach(f);
+		</script>
+	</head>
+
+	<body></body>
+</html>

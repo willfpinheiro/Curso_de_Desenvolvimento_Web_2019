@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+		<title>JavaScript - Tratamentos de erros</title>
+		<script>
+			"use strict";
+
+			// netflix
+			var video = [];
+			video[1] = [];
+			video[1]["nome"] = "Naruto";
+			video[1]["categoria"] = "Anime";
+
+			function getVideo(video) {
+				try {
+					// logica
+					// http
+					console.log(video[0]["Nome"]);
+				} catch (erro) {
+					console.log(erro);
+					console.log("Agora podemos tratar o erro");
+					throw new Error(
+						"HOuve um erro, mas não se preocupe, estamos trabalhando nisso agora!!!!"
+					);
+				} finally {
+					console.log("Sempre passa por aqui (try / Cacth)");
+				}
+				console.log("A aplicação não morreu");
+			}
+			function tratarErro(e) {
+				// Lógica para registrar o erro no servidor
+				console.log(e);
+			}
+			getVideo(video);
+		</script>
+	</head>
+
+	<body>
+	
+	</body>
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+		<title>JavaScript - BOM Window</title>
+		<script>
+			"use strict";
+			var janela;
+			function abrirPopUp() {
+				janela = window.open(
+					"http://www.google.com",
+					"nova_janela",
+					"width=200, height=100"
+				);
+			}
+			function fecharPopUp() {
+				janela.close();
+			}
+			function imprimirPagina() {
+				window.print();
+			}
+		</script>
+	</head>
+
+	<body>
+		<button onclick="abrirPopUp()">Abrir Janela</button>
+		<button onclick="fecharPopUp()">Fechar Janela</button>
+		<button onclick="imprimirPagina()">Imprimir Página</button>
+	</body>
+</html>

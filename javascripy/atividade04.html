@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+		<title>JavaScript - Atividade 04</title>
+		<!-- Crie um campo <input type="text"> e aplique os seguintes controles com base nos
+        eventos abaixo:
+        • No evento de foco modifique o background do input para amarelo.
+        • Quando o campo perder o foco, recupere o seu respectivo valor e:
+        o Caso o conteúdo contido no campo tenha menos de 3 caracteres o mesmo
+        deve ter seu background alterado para vermelho.
+        o Caso o conteúdo contido no campo tenha 3 caracteres ou mais o background
+        deve ser alterado para verde. -->
+		<script>
+			"use strict";
+			function mudarBack() {
+				document.getElementById("entrada").style.background = "yellow";
+			}
+			function verificarCampo() {
+				var quantidadeDeElementos = document.getElementById("entrada")
+					.value.length;
+				console.log(quantidadeDeElementos);
+				if (quantidadeDeElementos >= 3) {
+					var cor = "green";
+				} else {
+					cor = "red";
+				}
+				document.getElementById("entrada").style.backgroundColor = cor;
+				quantidadeDeElementos = document.getElementById(
+					"entrada"
+				).value = "";
+			}
+		</script>
+	</head>
+
+	<body>
+		<input
+			id="entrada"
+			type="text"
+			onfocus="mudarBack()"
+			onfocusout="verificarCampo()"
+		/>
+		<!-- TODO - criar verificar função onchange-->
+	</body>
+</html>

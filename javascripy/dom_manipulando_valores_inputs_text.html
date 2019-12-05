@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+		<title>JavaScript - DOM Selec. Elementos</title>
+		<script>
+			"use strict";
+			function distribuiCaracter() {
+				// selecionar o valor digitado
+				var caracter = document.getElementById("entrada").value;
+				// limpar o campo de digitação
+				document.getElementById("entrada").value = "";
+				// limpar espaços em branco nas estremidades
+				caracter.trim();
+				switch (caracter) {
+					case "0":
+					case "1":
+					case "2":
+					case "3":
+					case "4":
+					case "5":
+					case "6":
+					case "7":
+					case "8":
+					case "9":
+						//adicionar o caracter no campo referente a números
+						document.getElementById(
+							"apenas_numeros"
+						).value += caracter;
+						break;
+					default:
+						// adicionar o caracter no campo referente a letras
+						document.getElementById(
+							"apenas_letras"
+						).value += caracter;
+				}
+			}
+		</script>
+	</head>
+
+	<body>
+		<input
+			type="text"
+			placeholder="digite um caracter aqui"
+			onkeyup="distribuiCaracter()"
+			id="entrada"
+		/>
+
+		<hr />
+		<span>Letras: </span>
+		<input type="text" disabled="disabled" id="apenas_letras" />
+		<span>Números:</span>
+		<input type="text" disabled="disabled" id="apenas_numeros" />
+		<script>
+			"use strict";
+
+
+		</script>
+	</body>
+</html>

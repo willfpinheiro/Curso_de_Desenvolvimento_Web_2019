@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+		<title>JavaScript - Eventos Mouse</title>
+
+		<script>
+			"use strict";
+			function acao() {
+				alert("Elemento clicado");
+			}
+			function acao1() {
+				alert("Mouse saiu de cima");
+			}
+			// onmouseover="acao()"
+			// style="background: #ccc; height: 150px; width: 150px;"
+			// onmouseout="acao()"
+			// style="background: #ccc; height: 150px; width: 150px;"
+			// ondblclick="acao()"
+			// style="background: #ccc; height: 150px; width: 150px;"
+		</script>
+	</head>
+
+	<body>
+		<div
+			onclick="acao()"
+			onmouseout="acao1()"
+			style="background: #ccc; height: 150px; width: 150px;"
+		></div>
+	</body>
+</html>

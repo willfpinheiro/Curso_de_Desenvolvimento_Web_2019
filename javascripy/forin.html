@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+		<title>JavaScript - ForIn</title>
+		<script>
+			"use strict";
+			// var listaConvidados = ["Jorge", "Jamilton", "José", "Ana", "Maria"];
+
+			var listaConvidados = [];
+			listaConvidados["a"] = "Pedro";
+			listaConvidados[10] = "Casa";
+			listaConvidados["zebra"] = "maria";
+			listaConvidados[true] = "Jorge";
+
+			console.log(listaConvidados);
+
+			for (var x in listaConvidados) {
+				console.log("Indice " + x + " valor " + listaConvidados[x]);
+			}
+		</script>
+	</head>
+
+	<body></body>
+</html>

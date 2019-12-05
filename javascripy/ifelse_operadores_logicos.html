@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+		<title>JavaScript - If e Else Op. Lógicos</title>
+		<script>
+			"use strict";
+
+			// true && true = true
+			if (2 == 2 && 3 >= 1) {
+				document.write("Verdadeiro" + "<br />");
+			}
+
+			// true && false = false
+			if (2 == 2 && "a" === "b") {
+				document.write("Verdadeiro" + "<br />");
+			} else {
+				document.write("falso" + "<br />");
+			}
+
+			//
+			if (2 == 1 || 3 >= 5) {
+				document.write("Verdadeiro" + "<br />");
+			} else {
+				document.write("falso" + "<br />");
+			}
+
+			// false || false = false
+			if (2 == 4 || "a" === "b") {
+				document.write("Verdadeiro" + "<br />");
+			} else {
+				document.write("falso" + "<br />");
+			}
+
+			// true = false
+			if (!(2 == 4)) {
+				document.write("Verdadeiro" + "<br />");
+			} else {
+				document.write("falso" + "<br />");
+			}
+
+			var nota = prompt("Digite a nota do aluno:");
+			var faltas = prompt("Digite a quantidades de faltas do aluno:");
+			var media = 7;
+			var faltas_max = 15;
+
+			//alerta à comparação === ou !== pois verifica o tipo
+			// if (nota >= media && faltas <= faltas_max) {
+			//     //document.write('Entrou dentro do IF (verdadeiro)')
+			//     document.write('Aprovado!!!!');
+			// } else {
+			//     // document.write('Entrou dentro do Else (falso)')
+			//     document.write('Reprovado');
+			// }
+
+			// operador ternario
+			// var resultado = <condicao> ? <verdadeiro> : <falso>
+			var resultado =
+				nota >= media && faltas <= faltas_max
+					? "Aprovado!!!!"
+					: "Reprovado";
+			document.write(resultado);
+		</script>
+	</head>
+
+	<body></body>
+</html>

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+		<title>JavaScript - Atividade 05</title>
+		<script>
+			"use strict";
+
+			var objetos = Array("Cadeira", "Impressora", "Garfo");
+
+			function adicionarLista() {
+				//recupera o valor inserido no campo id objeto
+				var item = document.getElementById("inputLista").value.trim();
+				item = item.replace(item[0], item[0].toUpperCase());
+
+				if (item === "") {
+					alert("Informe um valor válido");
+				} else if (objetos.indexOf(item) !== -1) {
+					alert("Objeto já foi adicionado");
+					document.getElementById("inputLista").value = "";
+				} else {
+					objetos.push(item);
+					console.log(objetos);
+
+					document.getElementById("inputLista").value = "";
+				}
+			}
+
+			function ordenarLista() {
+				objetos.sort();
+				alert("Objetos ordenados " + objetos);
+			}
+		</script>
+	</head>
+
+	<body>
+		<input id="inputLista" type="text" />
+		<button type="submit" onclick="adicionarLista()">
+			Adicionar
+		</button>
+		<button type="submit" onclick="ordenarLista()">Ordenar</button>
+	</body>
+</html>

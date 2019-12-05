@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+		<title>JavaScript - Strings</title>
+		<script>
+			"use strict";
+			var nome = " Jorge Sant Ana ";
+
+			//propiedade lenght -retona o tamanho
+			document.write(nome.length + "<hr />");
+			// metodo função charart - retorna o que tem na posição desejada
+			document.write(nome.charAt(7) + "<hr />");
+			// - primeira aparição da informação
+			document.write(nome.indexOf("g") + "<hr />");
+			// replace - substitui
+			document.write(
+				nome.replace("Sant Ana", "Barros Pinheiro") + "<hr />"
+			);
+			// recupera de um ate quanto for informado
+			document.write(nome.substr(6, 4) + "<hr />");
+			document.write(nome.toUpperCase() + "<hr />");
+			document.write(nome.toLowerCase() + "<hr />");
+			// remove os espaços
+			document.write(nome.trim() + "<hr />");
+		</script>
+	</head>
+
+	<body></body>
+</html>

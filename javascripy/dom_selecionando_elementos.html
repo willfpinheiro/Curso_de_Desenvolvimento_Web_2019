@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+		<title>JavaScript - DOM Selec. Elementos</title>
+		<script>
+			"use strict";
+			//se tentar colocar o consuta aqui, retorna null, pois o input nao foi criado
+			//console.log(document.getElementById("nome_usuario"));
+
+		</script>
+	</head>
+
+	<body>
+		<input
+			type="text"
+			placeholder="digite seu nome"
+			id="nome_usuario"
+			class="campo_texto"
+			name="nome"
+		/>
+		<script>
+			"use strict";
+			// console.log(document.getElementById("nome_usuario"));
+			// console.log(document.getElementsByTagName("input"));
+			// console.log(document.getElementsByClassName("campo_texto"));
+			console.log(document.getElementsByName("nome"));
+		</script>
+	</body>
+</html>
