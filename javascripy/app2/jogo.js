@@ -2,18 +2,35 @@ var altura = 0;
 var largura = 0;
 var vidas = 1;
 var tempo = 15;
-
+var tempoMobile = 0;
 var criaMosquitoTempo = 1500;
+
+// verificar se é mobile
+function detectarMobile() {
+	if (
+		navigator.userAgent.match(/Android/i) ||
+		navigator.userAgent.match(/webOS/i) ||
+		navigator.userAgent.match(/iPhone/i) ||
+		navigator.userAgent.match(/iPad/i) ||
+		navigator.userAgent.match(/iPod/i) ||
+		navigator.userAgent.match(/BlackBerry/i) ||
+		navigator.userAgent.match(/Windows Phone/i)
+	) {
+		tempoMobile = 250;
+	}
+}
+detectar_mobile();
+
 // recuperar o nivel
 var nivel = window.location.search;
 // limpar o '?'
 nivel = nivel.replace("?", "");
 if (nivel === "normal") {
-	criaMosquitoTempo = 1500;
+	criaMosquitoTempo = 1500 - tempoMobile;
 } else if (nivel === "dificil") {
-	criaMosquitoTempo = 1000;
+	criaMosquitoTempo = 1000 - tempoMobile;
 } else if (nivel === "chucknoris") {
-	criaMosquitoTempo = 750;
+	criaMosquitoTempo = 750 - tempoMobile;
 }
 {
 }
