@@ -4,8 +4,8 @@ var vidas = 1;
 var tempo = 15;
 var tempoMobile = 0;
 var criaMosquitoTempo = 1500;
-
-// verificar se é mobile
+console.log("Dev: Will Pinheiro");
+// verificar se é mobile e diminui o tempo de jogo em 250ms
 function detectarMobile() {
 	if (
 		navigator.userAgent.match(/Android/i) ||
@@ -19,7 +19,7 @@ function detectarMobile() {
 		tempoMobile = 250;
 	}
 }
-detectar_mobile();
+detectarMobile();
 
 // recuperar o nivel
 var nivel = window.location.search;
@@ -79,7 +79,7 @@ function posicaoRandomica() {
 	posicaoX = posicaoX < 0 ? 0 : posicaoX;
 	posicaoY = posicaoY < 0 ? 0 : posicaoY;
 
-	console.log(posicaoX, posicaoY);
+	// console.log(posicaoX, posicaoY);
 
 	// criar elemento html
 	var mosquito = document.createElement("img");
