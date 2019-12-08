@@ -1,45 +1,102 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+	<head>
+		<!-- Meta tags Obrigatórias -->
+		<meta charset="utf-8" />
+		<meta
+			name="viewport"
+			content="width=device-width, initial-scale=1, shrink-to-fit=no"
+		/>
 
-<head>
-  <!-- Meta tags Obrigatórias -->
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+		<!-- Bootstrap CSS -->
+		<link
+			rel="stylesheet"
+			href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+			integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+			crossorigin="anonymous"
+		/>
 
-  <!-- Bootstrap CSS -->
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
-    integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+		<title>Login</title>
+	</head>
 
-  <title>Login</title>
-</head>
+	<body
+		class="bg-dark"
+		style="padding-top: 10%; padding-left: 30%; padding-right: 30%"
+	>
+		<div class="text-center text-white">
+			<h1 class="display-3 text-monospace">Login</h1>
+		</div>
+		<div
+			class="container border border-white rounded"
+			style="background: #332222; width: 200px;"
+		>
+			<div class="row text-center text-white">
+				<!-- <label for="email-usuario">Email</label> -->
+				<input
+					class="form-control is-valid"
+					type="text"
+					id="emailUsuario"
+					placeholder="Digite seu e-mail"
+				/>
+			</div>
+			<div class="row text-center text-white border border-white rounded">
+				<!-- <label for="senha-usuario">Password</label> -->
+				<input
+					class="form-control is-valid"
+					type="password"
+					id="senhaUsuario"
+					placeholder="Password"
+				/>
+			</div>
+		</div>
+		<br />
+		<div class="container">
+			<div class="row text-center justify-content-center">
+				<button
+					onclick="logar()"
+					id="login"
+					type="submit"
+					class="btn btn-dark"
+				>
+					Logar
+				</button>
+			</div>
+		</div>
 
-<body class="bg-dark" style="padding-left: 30%; padding-right: 30%">
-  <div class="text-center text-white">
-    <h1 class="display-3 text-monospace">Login</h1>
-  </div>
-  <div class="container border border-white rounded" style="background: #332222">
-    <div class="row text-center text-white">
-      <label for="email-usuario">Email</label>
-      <input class="form-control is-valid" type="text" id="email-usuario" placeholder="Digite seu e-mail">
-    </div>
-    <div class="row text-center text-white border border-white rounded">
-      <label for="senha-usuario">Password</label>
-      <input class="form-control is-valid" type="password" id="senha-usuario" placeholder="Password">
-    </div>
-  </div>
+		<script>
+			console.log("Email: teste@email.com Senha: 123");
 
-
-  <!-- JavaScript (Opcional) -->
-  <!-- jQuery primeiro, depois Popper.js, depois Bootstrap JS -->
-  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-    crossorigin="anonymous"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
-    integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
-    crossorigin="anonymous"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
-    integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
-    crossorigin="anonymous"></script>
-</body>
-
+			function logar() {
+				var emailUsuario = document.getElementById("emailUsuario")
+					.value;
+				var senhaUsuario = document.getElementById("senhaUsuario")
+					.value;
+				if (
+					emailUsuario === "teste@email.com" &&
+					senhaUsuario === "123"
+				) {
+					window.open("./formularios.html");
+				} else {
+					alert("Procure o email e senha corretos!!");
+				}
+			}
+		</script>
+		<!-- JavaScript (Opcional) -->
+		<!-- jQuery primeiro, depois Popper.js, depois Bootstrap JS -->
+		<script
+			src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+			integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+			crossorigin="anonymous"
+		></script>
+		<script
+			src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+			integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+			crossorigin="anonymous"
+		></script>
+		<script
+			src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+			integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+			crossorigin="anonymous"
+		></script>
+	</body>
 </html>
