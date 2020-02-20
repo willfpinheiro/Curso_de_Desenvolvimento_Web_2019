@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+		<title>Formulário</title>
+	</head>
+	<body>
+		<h2>login</h2>
+		<form action="processa.php">
+			Login: <br />
+			<input type="text" name="login" /> <br />
+			Senha: <br />
+			<input type="password" name="senha" /> <br />
+			<input type="submit" value="Logar" /> <br />
+		</form>
+
+		<form action="">
+			<h2>Cadastre-se</h2>
+			<br />
+			Login: <br />
+			<input type="text" name="login" /><br /><br />
+			sexo: <br />
+			<input type="radio" name="sexo" value="F" />Feminino <br />
+			<input type="radio" name="sexo" value="M" />Masculino <br />
+			<input type="radio" name="sexo" value="O" />Outros <br /><br />
+
+			Interesses: <br />
+			<input type="checkbox" name="interesses" />Futebol <br />
+			<input type="checkbox" name="interesses" />Cursos <br />
+			<input type="checkbox" name="interesses" />Moda <br /><br />
+
+			Estados: <br />
+			<select name="estado">
+				<option value="sp">SP</option>
+				<option value="pa">PA</option>
+				<option value="bh">BH</option>
+				<option value="MA">MA</option>
+			</select>
+			<br /><br />
+			Observações: <br />
+			<textarea name="" id="" cols="30" rows="10"></textarea> <br />
+			<input type="submit" value="Cadastrar" />
+		</form>
+	</body>
+</html>
