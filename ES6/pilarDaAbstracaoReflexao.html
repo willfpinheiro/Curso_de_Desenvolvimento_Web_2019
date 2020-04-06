@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<title>ES6 - Definição da parametros Default</title>
+
+		<!-- Load Babel -->
+		<script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+		<!-- Your custom script here -->
+		<script type="text/babel">
+			// // software de marcenaria
+			// // cadeira e sofa
+
+			// //paradgima procedural
+
+			// // cadeira
+			// let qtdePernas = 4;
+			// let giratoria = false;
+			// let cor = "azul";
+
+			// // array de cadeiras
+			// let cadeiras = Array();
+			// cadeiras[0] = [];
+			// cadeiras[0]["qtdePernas"] = 4;
+			// cadeiras[0]["giratoria"] = false;
+			// cadeiras[0]["cor"] = "azul";
+
+			// cadeiras[1] = [];
+			// cadeiras[1]["qtdePernas"] = 1;
+			// cadeiras[1]["giratoria"] = true;
+			// cadeiras[1]["cor"] = "vermelha";
+
+			// function girarCadeira(indice) {
+			// 	if (cadeiras[indice]["giratoria"] === true) {
+			// 		console.log("Girou");
+			// 	} else {
+			// 		console.log("Cadeira nao gira");
+			// 	}
+			// }
+
+			// function adcionarCadeiras(qtdePernas, giratoria, cor) {
+			// 	let cadeira = [];
+			// 	cadeira["qtdePernas"] = qtdePernas;
+			// 	cadeira["giratoria"] = giratoria;
+			// 	cadeira["cor"] = cor;
+			// }
+
+			// adcionarCadeiras(3, false, "roxo");
+
+			// paradigma de OO
+
+			class Cadeira {
+				// JS DOCS
+				// @param {number} qtdePernas - quantidade de pernas na cadeira
+				// @param {boolean} giratoria - se a cadeira ira girar ou não
+				// @param {string} cor - cor que a cadeira é predominante
+
+				constructor(qtdePernas, giratoria, cor) {
+					this.qtdePernas = qtdePernas;
+					this.giratoria = giratoria;
+					this.cor = cor;
+				}
+
+				girarCadeira() {
+					if (this.giratoria === true) {
+						console.log("Girou");
+					} else {
+						console.log("Cadeira nao gira");
+					}
+				}
+			}
+
+			class Sofa {
+				// JS DOCS
+				// @param {number} qtdeLugares - quantidade de lugares para alocar as pessoas
+				// @param {boolean} reclinavel - possibilidade de o sofa/poltrona reclinar
+				// @param {string} cor - cor que o sofa é predominante
+				constructor(qtdeLugares, reclinavel, cor) {
+					this.qtdeLugares = qtdeLugares;
+					this.reclinavel = reclinavel;
+					this.cor = cor;
+				}
+
+				reclinarSofa() {
+					if (this.reclinavel === true) {
+						console.log("Esse sofa reclina");
+						if (this.qtdeLugares > 2) {
+							console.log("Vira uma cama");
+						}
+					} else {
+						console.log("Esse sofa não reclina");
+					}
+				}
+			}
+
+			let cadeira = [];
+			cadeira.push(new Cadeira(4, false, "azul"));
+			cadeira.push(new Cadeira(2, true, "roxa"));
+
+			console.log(cadeira);
+			console.log(cadeira[0].girarCadeira());
+
+			let sofa = [];
+			sofa.push(new Sofa(4, true, "branco"));
+			sofa.push(new Sofa(2, true, "vermelho"));
+			sofa.push(new Sofa(1, true, "preto"));
+
+			console.log(sofa);
+			console.log(sofa[0].reclinarSofa());
+		</script>
+	</head>
+	<body></body>
+</html>

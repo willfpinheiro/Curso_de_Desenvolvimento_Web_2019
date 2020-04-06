@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<title>ES6 - Função Construtora</title>
+
+		<!-- Load Babel -->
+		<script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+		<!-- Your custom script here -->
+		<script type="text/babel">
+			let Carro = function() {
+				this.cor = "Amarelo";
+				this.modelo = "Ford";
+				this.velocidadeAtual = 0;
+				this.velocidadeMaxima = 180;
+
+				this.acelerar = function() {
+					let velocidade = this.velocidadeAtual + 10;
+					this.setVelocidadeAtual(velocidade);
+				};
+				this.getVelocidadeAtual = function() {
+					return this.velocidadeAtual;
+				};
+				this.setVelocidadeAtual = function(velocidadeAtual) {
+					this.velocidadeAtual = velocidadeAtual;
+				};
+			};
+			let carro = new Carro();
+
+			console.log(`A velocidade atual é: ${carro.getVelocidadeAtual()}`);
+			carro.acelerar();
+			console.log(`A velocidade atual é: ${carro.getVelocidadeAtual()}`);
+		</script>
+	</head>
+	<body></body>
+</html>

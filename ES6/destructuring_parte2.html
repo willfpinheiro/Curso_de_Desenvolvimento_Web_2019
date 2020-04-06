@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<title>ES6 - Destruction Parte 2</title>
+
+		<!-- Load Babel -->
+		<script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+		<!-- Your custom script here -->
+		<script type="text/babel">
+			//objeto literal- composiçao é um x tem um
+			let produto = {
+				descricao: "notebook",
+				preco: 1800,
+				detalhes: {
+					fabricantes: "abc",
+					modelo: "xyz"
+				}
+			};
+
+			//let { descricao, preco } = produto;
+
+			let {
+				descricao: d,
+				preco: p,
+				desconto: desc = 5,
+				detalhes: { fabricantes: f, modelo: m }
+			} = produto;
+			console.log(d, p, desc, f, m);
+		</script>
+	</head>
+	<body></body>
+</html>

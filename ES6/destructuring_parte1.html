@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<title>ES6 - Destruction Parte 1</title>
+
+		<!-- Load Babel -->
+		<script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+		<!-- Your custom script here -->
+		<script type="text/babel">
+			//destructuring faz a desestruturação em array ou objeto
+
+			let frutas = ["Abacaxi", "morango", "Uva", "Pera"];
+
+			//	let a = frutas[0]
+			//	let b = frutas[1]
+			//	let c = frutas[3]
+			//console.log(a, b, c);
+
+			//let [a, b, , c] = frutas;  //pular um indice
+			//console.log(a, b, c);
+
+			let [a, b, c, d, e = "banana"] = frutas; // valor default para campos sem informação
+			console.log(a, b, c);
+
+			let coisas = [
+				["Abacaxi", "morango", "Uva", "Pera"],
+				["jose", "maria"]
+			];
+
+			let [[, , n3], [, n2]] = coisas;
+			console.log(n3, n2);
+		</script>
+	</head>
+	<body></body>
+</html>

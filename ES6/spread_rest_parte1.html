@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<title>ES6 - Spread/Rest parte 1</title>
+
+		<!-- Load Babel -->
+		<script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+		<!-- Your custom script here -->
+		<script type="text/babel">
+			//Contexto Spread
+
+			//string
+			let tituloArtigo = "Como utilizar o operador Rest?Spread";
+
+			console.log(tituloArtigo);
+			console.log(...tituloArtigo);
+			console.log([...tituloArtigo]);
+
+			//arrays
+			let listaCursos1 = ["Ia com Python", "Java e SpringBoot"];
+			let listaCursos2 = ["VUE x React", "MySQL e MongoDB"];
+			let ListaCursosCompleto = [
+				"Web Completo",
+				"Android Completo",
+				...listaCursos1,
+				...listaCursos2
+			];
+
+			console.log(ListaCursosCompleto);
+
+			//objetos
+			let pessoa = { nome: "joao", idade: 27 };
+			let clone = { endereço: "Rua ABC", ...pessoa };
+
+			console.log(clone);
+		</script>
+	</head>
+	<body></body>
+</html>

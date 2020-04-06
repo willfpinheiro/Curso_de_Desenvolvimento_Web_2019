@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<title>ES6 - Definição da parametros Default</title>
+
+		<!-- Load Babel -->
+		<script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+		<!-- Your custom script here -->
+		<script type="text/babel">
+			function contarUmaHistoria(
+				personagem = "Yoda",
+				atividade = "Dormir",
+				nomeDono = "Amanda"
+			) {
+				document.write(
+					`Era uma vez um cachorro chamado ${personagem}, ele adorava ${atividade}, seu dono era o ${nomeDono} e eles viveram felizes para sempre. <hr / >`
+				);
+			}
+
+			contarUmaHistoria("Repolho");
+			contarUmaHistoria("Repolho", "Enterrar Ossos");
+			// nao definir um valor para o primeiro parametro
+			contarUmaHistoria(undefined, "Correr", "Willyam");
+		</script>
+	</head>
+	<body></body>
+</html>

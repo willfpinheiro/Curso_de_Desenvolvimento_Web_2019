@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<title>ES6 - Spread/Rest parte 2</title>
+
+		<!-- Load Babel -->
+		<script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+		<!-- Your custom script here -->
+		<script type="text/babel">
+			//contexto rest
+			function soma(...parametros) {
+				let resultado = 0;
+				console.log(parametros);
+				parametros.forEach(elemento => (resultado += elemento));
+				return resultado;
+			}
+
+			console.log(soma(3, 8, 5, 7));
+
+			function multiplicacao(m, ...parametros) {
+				let resultado = 0;
+				console.log(m);
+				console.log(parametros);
+				parametros.forEach(elemento => (resultado += m * elemento));
+				return resultado;
+			}
+			console.log(multiplicacao(5, 2, 4, 6, 4));
+		</script>
+	</head>
+	<body></body>
+</html>

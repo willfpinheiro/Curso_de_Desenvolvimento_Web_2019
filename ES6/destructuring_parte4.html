@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<title>ES6 - Destruction Parte 4</title>
+
+		<!-- Load Babel -->
+		<script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+		<!-- Your custom script here -->
+		<script type="text/babel">
+			//array
+			let arr = [10, 20, 30, 40, 50];
+			//usar o sprad pra juntar o resto
+			let [a, ...resto] = arr;
+
+			console.log(a);
+			console.log(resto);
+
+			//objeto
+			let obj = {
+				a: 10,
+				b: 20,
+				c: 30,
+				d: 40,
+				e: 50
+			};
+
+			let { a: o, ...restoO } = obj;
+
+			console.log(o);
+			console.log(restoO);
+		</script>
+	</head>
+	<body></body>
+</html>

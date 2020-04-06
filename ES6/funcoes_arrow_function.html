@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<title>ES6 - Definição da parametros Default</title>
+
+		<!-- Load Babel -->
+		<script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+		<!-- Your custom script here -->
+		<script type="text/babel">
+			// let quadrado = function(x = 5) {
+			// 	return x * x;
+			// };
+
+			// arrow function básico
+			// let quadrado = (x = 5) => {
+			// 	return x * x;
+			// };
+			// como so esta recebendo um parametro, retira os parenteses
+			// return implicito
+			let quadrado = x => x * x;
+
+			// executar a função
+			document.write(quadrado(3));
+
+			let parOuImpar = numero => (numero % 2 === 0 ? "par" : "impar");
+
+			document.write(parOuImpar(9));
+		</script>
+	</head>
+	<body></body>
+</html>

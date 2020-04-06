@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<title>ES6 - Objeto Literal</title>
+
+		<!-- Load Babel -->
+		<script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+		<!-- Your custom script here -->
+		<script type="text/babel">
+			class Produto {
+				constructor(descricao, preco) {
+					this.descricao = descricao;
+					this.preco = preco;
+				}
+				varDescricao() {
+					console.log(`${this.descricao} por apenas ${this.preco}`);
+				}
+			}
+
+			let produto = new Produto("Notebook", 2002);
+			produto.varDescricao();
+
+			let produtoLiteral = {
+				descricao: "geladeira",
+				preco: 1800,
+				varDescricao: function() {
+					console.log(`${this.descricao} por apenas ${this.preco}`);
+				}
+			};
+
+			produtoLiteral.varDescricao();
+
+			         //------------------------------------
+			         formulario -> servidor
+			         obj literal -> JSON -> HTTP -> Server  -> armazenamento
+		</script>
+	</head>
+	<body></body>
+</html>

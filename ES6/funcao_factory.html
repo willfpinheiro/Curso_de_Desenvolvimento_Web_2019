@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<title>ES6 - Função Construtora</title>
+
+		<!-- Load Babel -->
+		<script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+		<!-- Your custom script here -->
+		<script type="text/babel">
+			let Bicicleta1 = {
+				cor: "branca",
+				marcha: "unica",
+				aro: 12,
+				pedalar() {
+					console.log("Metodo pedalar executado com sucesso");
+				}
+			};
+			let Bicicleta2 = {
+				cor: "Vermelha",
+				marcha: "18",
+				aro: 26,
+				pedalar() {
+					console.log("Metodo pedalar executado com sucesso");
+				}
+			};
+
+			console.log(Bicicleta1);
+			console.log(Bicicleta2);
+
+			let BicicletaFactory = function(cor, marcha, aro, tipoPedal) {
+				//logica
+				//requisiçao
+				//repost http
+				return {
+					cor, //cor: cor,
+					marcha, //marcha: marcha,
+					aro, //aro: aro,
+					tipoPedal,
+					pedalar() {
+						console.log("Metodo pedalar executado com sucesso");
+					}
+				};
+			};
+
+			let Bicicleta3 = BicicletaFactory("Vermelha", "18", 26, "Ferro");
+			console.log(Bicicleta3);
+			let Bicicleta4 = BicicletaFactory("Lilas", "15", 29, "Aluminium");
+			console.log(Bicicleta4);
+
+			console.log(`Cor: ${Bicicleta3.cor}`);
+			Bicicleta3.pedalar;
+		</script>
+	</head>
+	<body></body>
+</html>

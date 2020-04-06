@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<title>ES6 - Prototype</title>
+
+		<!-- Load Babel -->
+		<script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+		<!-- Your custom script here -->
+		<script type="text/babel">
+			//aviao
+			//atributos cor e  modelo; metodo levantarVoo
+			//Objeto literal
+			let a1 = {
+				cor: "Amarela",
+				modelo: "AirBus a300",
+				levantarVoo: function() {
+					console.log("Levantar Voo");
+				}
+			};
+			//funcao construtora
+			let AviaoF = function() {
+				this.cor = "Azul";
+				this.modelo = "AirBus f1000";
+				this.levantarVoo = function() {
+					console.log("Levantar voo");
+				};
+			};
+
+			let a2 = new AviaoF();
+
+			//classe
+			class AviaoC {
+				constructor() {
+					this.cor = "Vermelho";
+					this.modelo = "AirBus a1132";
+				}
+				levantarVoo = function() {
+					console.log("Levantar voo");
+				};
+			}
+
+			let a3 = AviaoC;
+
+			console.log(a1);
+			console.log(a2);
+			console.log(a3);
+		</script>
+	</head>
+	<body></body>
+</html>

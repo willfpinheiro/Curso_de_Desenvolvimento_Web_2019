@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<title>ES6 - Definição da parametros Default</title>
+
+		<!-- Load Babel -->
+		<script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+		<!-- Your custom script here -->
+		<script type="text/babel">
+			class Animal {
+				constructor() {
+					this.cor = "";
+					this.tamanho = null;
+					this.peso = null;
+				}
+				dormir() {
+					console.log("Dormir");
+				}
+			}
+			class Cachorro extends Animal {
+				constructor() {
+					super();
+					this.orelha = "Grande e caida";
+				}
+				correr() {
+					console.log("correr");
+				}
+
+				rosnar() {
+					console.log("rosnar");
+				}
+			}
+			class Passaro extends Animal {
+				constructor() {
+					super();
+					this.bico = "curto";
+				}
+				voar() {
+					console.log("voar");
+				}
+			}
+			class Papagaio extends Passaro {
+				constructor() {
+					super();
+
+					this.sabeFalar = true;
+				}
+				falar() {
+					console.log("Falar");
+				}
+			}
+			let cachorro = new Cachorro();
+			let passaro = new Passaro();
+			let papagaio = new Papagaio();
+
+			cachorro.dormir();
+			passaro.dormir();
+			papagaio.dormir();
+			papagaio.falar();
+			console.log(passaro);
+		</script>
+	</head>
+	<body></body>
+</html>

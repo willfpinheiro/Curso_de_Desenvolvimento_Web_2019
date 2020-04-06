@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<title>ES6 - Objeto Literal Melhorias</title>
+
+		<!-- Load Babel -->
+		<script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+		<!-- Your custom script here -->
+		<script type="text/babel">
+			let nome = "Jorge"; //document.getElementById('nome').value
+			let idade = 29;
+			let sexo = "Masculino";
+			let profissao = "Programador";
+
+			let objeto = {
+				nome: nome,
+				idade: idade,
+				sexo: sexo,
+				profissao: profissao,
+				exibirResumo: function() {
+					console.log(
+						`${this.nome}, ${this.idade}, anos, ${this.sexo} e ${this.profissao}`
+					);
+				}
+			};
+
+			console.log(objeto);
+			objeto.exibirResumo();
+
+			let objeto2 = {
+				nome, //quando variavel nome = nome >>> valor = valor
+				idade,
+				sexo,
+				profissao,
+				exibirResumo: function() {
+					console.log(
+						`${this.nome}, ${this.idade}, anos, ${this.sexo} e ${this.profissao}`
+					);
+				}
+			};
+			console.log(objeto2);
+			objeto2.exibirResumo();
+		</script>
+	</head>
+	<body></body>
+</html>
